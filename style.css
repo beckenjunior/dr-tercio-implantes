@@ -1,7 +1,9 @@
 :root {
-    --primary: #0056b3; /* Azul Clínico Profundo */
+    --primary: #0056b3;
+    /* Azul Clínico Profundo */
     --primary-light: #e6f0ff;
-    --accent: #25d366; /* WhatsApp Green */
+    --accent: #25d366;
+    /* WhatsApp Green */
     --text-dark: #1a1a1a;
     --text-light: #666;
     --bg-light: #f8fafc;
@@ -29,7 +31,10 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, .badge {
+h1,
+h2,
+h3,
+.badge {
     font-family: 'Outfit', sans-serif;
 }
 
@@ -47,7 +52,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
 }
 
 nav {
@@ -169,9 +174,16 @@ nav {
     gap: 1.5rem;
 }
 
-.hero-image img {
+.hero-image img,
+.about-image img {
     width: 100%;
-    border-radius: 24px;
+    border-radius: 20px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1.2;
+}
+
+.hero-image img {
+    box-shadow: var(--shadow-premium);
 }
 
 /* Services */
@@ -357,7 +369,7 @@ footer {
     border-radius: 50px;
     text-align: center;
     font-size: 35px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     z-index: 9999;
     display: flex;
     align-items: center;
@@ -376,9 +388,17 @@ footer {
 }
 
 @keyframes pulse-animation {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .shadow-premium {
@@ -406,7 +426,8 @@ footer {
     }
 
     .nav-links {
-        display: none; /* Simplificado para MVP */
+        display: none;
+        /* Simplificado para MVP */
     }
 
     .hero-text p {
